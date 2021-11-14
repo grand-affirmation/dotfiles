@@ -1,0 +1,112 @@
+snippet latexnew "New Latex Paper" bA
+% !TeX program = lualatex
+\documentclass[12pt, twocolumn]{$1}
+\usepackage{microtype}
+\vfuzz3pt
+\hfuzz3pt
+\setlength{\emergencystretch}{1pc}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Gotham}
+\setsansfont{Helvetica}
+\AtBeginEnvironment{quote}{\singlespacing\small\sffamily}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[bookmarks]{hyperref}
+\usepackage{graphicx}
+\usepackage{array}
+\newcolumntype{L}{>{\arraybackslash}m{3cm}}
+\newcolumntype{O}{>{\arraybackslash}m{5cm}}
+
+\title{$2}
+\author{$3}
+\date{$4}
+
+\begin{document}
+\maketitle
+
+$0
+
+\end{document}
+endsnippet
+
+snippet bf "Bold" i
+\textbf{$1}$0
+endsnippet
+
+snippet bt "Bold" i
+\texttt{$1}$0
+endsnippet
+
+snippet rarrow "right arrow" i
+\rightarrow $0
+endsnippet
+
+snippet larrow "left arrow" i
+\leftarrow $0
+endsnippet
+
+snippet bi "Italics" i
+\textit{$1}$0
+endsnippet
+
+snippet mk "Math Mode" iA
+$$1$$0
+endsnippet
+
+snippet // "Fraction Mode" iA
+\dfrac{$1}{$2}$0
+endsnippet
+
+snippet beg "Begin and End" bA
+\begin{$1}
+$0
+\end{$1}
+endsnippet
+
+snippet lim "Limits" i
+\lim_{$1x \to $2} $0
+endsnippet
+
+snippet sec "Section" bA
+\section{$1}
+$0
+endsnippet
+
+snippet ssec "Subsection" bA
+\subsection{$1}
+$0
+endsnippet
+
+snippet sssec "Subsection" bA
+\subsubsection{$1}
+$0
+endsnippet
+
+snippet *sec "*Section" bA
+\section*{$1}
+$0
+endsnippet
+
+snippet *ssec "*Subsection" bA
+\subsection*{$1}
+$0
+endsnippet
+
+snippet *sssec "*Subsection" bA
+\subsubsection*{$1}
+$0
+endsnippet
+snippet td "Exponent" iA
+^{$1}$0
+endsnippet
+
+snippet sqrt "Square root" iA
+\sqrt{$1}$0
+endsnippet
+
+snippet tcolor "Text Color" i
+\textcolor{$1}{$2}$0
+endsnippet
+

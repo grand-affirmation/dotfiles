@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="ie=edge">
+
+    <title>Homepage</title>
+    <link rel="shortcut icon" type="image/png" href="home.png"/>    
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div id="search">
+        <input id="search-field" type="text" name="search-field"/>
+    </div>
+    <div class="container">
+        <div id="clock"></div>
+        <div class="bookmark-container">
+            <div class="bookmark-set">
+                <div class="bookmark-title">Privacy</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://privacyguides.org/" target="_self">Privacy Guides</a>
+                    <a class="bookmark" href="https://prism-break.org/" target="_self">Prism Break</a>
+                    <a class="bookmark" href="https://old.reddit.com/r/privacytoolsio/" target="_self">Privacytools (Reddit)</a>
+		    <a class="bookmark" href="https://old.reddit.com/r/privacy/" target="_self">Privacy (Reddit)</a>
+                    <a class="bookmark" href="https://old.reddit.com/r/privacyguides/" target="_self">Privacy Guides (Reddit)</a>
+                </div>
+            </div>
+
+            <div class="bookmark-set">
+                <div class="bookmark-title">4chan</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://boards.4channel.org/an/" target="_self">/an/</a>
+                    <a class="bookmark" href="https://boards.4channel.org/co/" target="_self">/co/</a>
+                    <a class="bookmark" href="https://boards.4channel.org/g/" target="_self">/g/</a>
+                    <a class="bookmark" href="https://boards.4channel.org/gif/" target="_self">/gif/</a>
+                    <a class="bookmark" href="https://boards.4channel.org/int/" target="_self">/int/</a>
+                    <a class="bookmark" href="https://boards.4channel.org/sci/" target="_self">/sci/</a>
+                    <a class="bookmark" href="https://boards.4channel.org/t/" target="_self">/t/</a>
+                    <a class="bookmark" href="https://boards.4channel.org/tv/" target="_self">/tv/</a>
+                    <a class="bookmark" href="https://boards.4channel.org/wsg/" target="_self">/wsg/</a>
+                    <a class="bookmark" href="https://boards.4channel.org/wsr/" target="_self">/wsr/</a>
+                </div>
+            </div>
+
+            <div class="bookmark-set">
+                <div class="bookmark-title">Social/Coding</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://codewars.com" target="_self">Codewars</a>
+                    <a class="bookmark" href="https://facebook.com" target="_self">Facebook</a>
+                    <a class="bookmark" href="https://gitlab.com/" target="_self">GitLab</a>
+                    <a class="bookmark" href="https://news.ycombinator.com/" target="_self">Hacker News</a>
+                    <a class="bookmark" href="https://letterboxd.com/" target="_self">Letterboxd</a>
+                    <a class="bookmark" href="https://messenger.com/" target="_self">Messenger</a>
+                    <a class="bookmark" href="https://reddit.com" target="_self">Reddit</a>
+                </div>
+            </div>
+
+            <div class="bookmark-set">
+                <div class="bookmark-title">Piracy</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://old.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index/" target="_self">Piracy (Reddit) 1</a>
+                    <a class="bookmark" href="https://old.reddit.com/r/piracy/wiki/megathread/" target="_self">Piracy (Reddit) 2</a>
+                    <a class="bookmark" href="https://rarbg.to/" target="_self">Rarbg</a>
+                    <a class="bookmark" href="https://torrentgalaxy.to/" target="_self">Torrentgalaxy</a>
+                    <a class="bookmark" href="https://gen.lib.rus.ec/" target="_self">Libgen</a>
+                </div>
+            </div>
+
+            <div class="bookmark-set">
+            <div class="bookmark-title">Other</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://wiki.archlinux.org/" target="_self">Arch Wiki</a>
+                    <a class="bookmark" href="https://readcomiconline.li/Login/" target="_self">readcomiconline</a>
+                    <a class="bookmark" href="https://sdap.aralinks.net/my/" target="_self">CLE Aralinks</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("search-field").addEventListener("keydown",  event => {
+            if (event.keyCode === 13) {
+                var val = document.getElementById("search-field").value;
+                window.open("https://search.brave.com/search?q=" + val + "&source=web", "_self");
+            }
+        });
+        getTime = () => {
+            let date = new Date(),
+                min = date.getMinutes(),
+                sec = date.getSeconds(),
+                hour = date.getHours();
+
+            return "" +
+                (hour < 10 ? ("0" + hour) : hour) + ":" +
+                (min < 10 ? ("0" + min) : min) + ":" +
+                (sec < 10 ? ("0" + sec) : sec);
+        }
+
+            document.getElementById("clock").innerHTML = getTime();
+            setInterval( () => {
+                document.getElementById("clock").innerHTML = getTime();
+            },100);
+        
+
+        document.addEventListener("keydown", event => {
+            if (event.keyCode == 32) {
+                document.getElementById('search').style.display = 'flex';
+                document.getElementById('search-field').focus();
+            } else if (event.keyCode == 27) {
+                document.getElementById('search-field').value = '';
+                document.getElementById('search-field').blur();
+                document.getElementById('search').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
