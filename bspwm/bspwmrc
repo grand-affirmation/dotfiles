@@ -18,11 +18,10 @@ bspc rule -a 'Zathura'    state=tiled
 bspc rule -a 'Emacs'     state=tiled
 
 # autostart
-polybar main  &
 #redshift &
 feh --no-fehbg --bg-fill $HOME/dotfiles/wallpaper.png
 sxhkd &
 #keepassxc &
 dunst &
 picom &
-alacritty -e bw login
+polybar main  &

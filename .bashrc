@@ -5,6 +5,7 @@ alias exa="exa --icons"
 alias rsync="rsync -av -P"
 alias mount-fd="udisksctl mount -b /dev/sdb1"
 alias remove-fd="udisksctl unmount -b /dev/sdb1"
+alias clean-exif-data="exiftool -all= -overwrite_original"
 
 mkcdir ()
 {
