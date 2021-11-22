@@ -39,6 +39,7 @@ c.content.canvas_reading = False
 c.tabs.title.format = "{current_title} - {host}"
 c.window.title_format = "{current_title} - {host}"
 c.content.headers.user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
+c.completion.web_history.max_items = 0
 
 ### Dark Mode and CSS Theme
 c.colors.webpage.darkmode.enabled = True
