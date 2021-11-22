@@ -10,7 +10,7 @@ These are my dotfiles. Currently using Artix Linux.
 | Needs | Program Used |
 |-------|--------------|
 |application launcher|rofi|
-|bittorrent client|transmission|
+|bittorrent client|qbittorrent|
 |browser|qutebrowser|
 |file manager|ranger|
 |image viewer|imv|

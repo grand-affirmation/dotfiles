@@ -24,6 +24,7 @@ config.bind('l', 'scroll-px 100 0')
 config.bind('tt', 'open ~/dotfiles/qutebrowser/Homepage/homepage.html')
 config.bind('tT', 'open -t ~/dotfiles/qutebrowser/Homepage/homepage.html')
 config.bind('<Ctrl-Shift-l>', 'spawn --userscript qute-bitwarden')
+config.bind('<Alt+t>', 'hint links userscript aria2c_fetch.sh')
 
 ### ADBLOCKING
 config.source("adblock.py")
