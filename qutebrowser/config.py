@@ -6,8 +6,7 @@ config.set('content.javascript.enabled', True, 'https://*.google.com/*')
 config.set('content.javascript.enabled', True, 'https://*.readcomiconline.li/*')
 config.set('content.javascript.enabled', True, 'https://*.4channel.org/*')
 config.set('content.javascript.enabled', True, 'https://*.4chan.org/*')
-config.set('content.javascript.enabled', True, 'https://*.rarbg.to/*')
-config.set('content.javascript.enabled', True, 'https://*.rarbgmirrored.org/*')
+config.set('content.javascript.enabled', True, 'https://*.rarbgaccess.org/*')
 config.set('content.javascript.enabled', True, 'https://*.torrentgalaxy.to/*')
 
 ### BINDS
@@ -62,7 +61,7 @@ c.content.notifications.enabled = True
 c.content.autoplay = False
 
 ### For opening text ares in nvim
-c.editor.command=['alacritty', '-e', 'nvim', '{file}']
+c.editor.command=['kitty', 'nvim', '{file}']
 
 ### For the expando button in old.reddit
 config.set('hints.selectors', {'preview': ['.expando-button']},pattern='*://*.reddit.com/*')
@@ -70,5 +69,5 @@ config.bind(';p', 'hint preview')
 
 ### Ranger File Picker
 c.fileselect.handler = "external"
-c.fileselect.single_file.command = ["alacritty", "-e", "ranger", "--choosefile={}"]
-c.fileselect.multiple_files.command = ["alacritty", "-e", "ranger", "--choosefiles={}"]
+c.fileselect.single_file.command = ['kitty', '-e', 'ranger', '--choosefile={}']
+c.fileselect.multiple_files.command = ['kitty', '-e', 'ranger', '--choosefiles={}']

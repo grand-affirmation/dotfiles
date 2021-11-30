@@ -5,6 +5,7 @@ alias mount-fd="udisksctl mount -b /dev/sdb1"
 alias remove-fd="udisksctl unmount -b /dev/sdb1"
 alias clean-exif-data="exiftool -all= -overwrite_original"
 alias xclip="xclip -selection clip"
+alias yt-dlp="yt-dlp --external-downloader aria2c"
 
 mkcdir ()
 {
@@ -14,4 +15,6 @@ mkcdir ()
 
 export EDITOR=nvim
 export VISUAL=nvim
+export HISTCONTROL=ignoreboth:erasedups
+
 . "$HOME/.cargo/env"

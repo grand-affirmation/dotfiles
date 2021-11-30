@@ -33,7 +33,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "GothamSSm,GothamSSm Medium:style=Medium,Regular:pixelsize=10"
+font-0 = "Iosevka SS14 Medium:style=Medium,Regular:pixelsize=10"
 font-1 = "Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid:pixelsize=10"
 
 modules-left = bspwm
