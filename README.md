@@ -24,5 +24,5 @@ These are my dotfiles. Currently using Artix Linux.
 |window manager|bspwm|
 
 ## Fonts Needed
-- Iosevka SS14
+- Iosevka
 - Font Awesome
