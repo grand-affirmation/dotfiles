@@ -6,6 +6,8 @@ config.set('content.javascript.enabled', True, 'https://*.google.com/*')
 config.set('content.javascript.enabled', True, 'https://*.readcomiconline.li/*')
 config.set('content.javascript.enabled', True, 'https://*.4channel.org/*')
 config.set('content.javascript.enabled', True, 'https://*.4chan.org/*')
+config.set('content.javascript.enabled', True, 'https://*.rarbg.to/*')
+config.set('content.javascript.enabled', True, 'https://*.rarbgmirrored.org/*')
 config.set('content.javascript.enabled', True, 'https://*.rarbgaccess.org/*')
 config.set('content.javascript.enabled', True, 'https://*.torrentgalaxy.to/*')
 
@@ -71,3 +73,6 @@ config.bind(';p', 'hint preview')
 c.fileselect.handler = "external"
 c.fileselect.single_file.command = ['kitty', '-e', 'ranger', '--choosefile={}']
 c.fileselect.multiple_files.command = ['kitty', '-e', 'ranger', '--choosefiles={}']
+
+### FONTS
+c.fonts.hints = 'Iosevka SS14'

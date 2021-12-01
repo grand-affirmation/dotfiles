@@ -18,3 +18,5 @@ export VISUAL=nvim
 export HISTCONTROL=ignoreboth:erasedups
 
 . "$HOME/.cargo/env"
+. /usr/share/fzf/key-bindings.bash
+. /usr/share/fzf/completion.bash 
