@@ -24,8 +24,6 @@ config.bind('k', 'scroll-px 0 -100')
 config.bind('l', 'scroll-px 100 0')
 config.bind('tt', 'open ~/dotfiles/qutebrowser/Homepage/homepage.html')
 config.bind('tT', 'open -t ~/dotfiles/qutebrowser/Homepage/homepage.html')
-config.bind('<Ctrl-Shift-l>', 'spawn --userscript qute-bitwarden')
-config.bind('<Alt+t>', 'hint links userscript aria2c_fetch.sh')
 
 ### ADBLOCKING
 config.source("adblock.py")
@@ -58,7 +56,7 @@ c.url.default_page = '~/dotfiles/qutebrowser/Homepage/homepage.html'
 ### Others
 c.content.prefers_reduced_motion = True
 c.input.insert_mode.leave_on_load = True
-c.url.searchengines = {"DEFAULT": "https://searx.be/search?q={}"}
+c.url.searchengines = {"DEFAULT": "https://searx.bar/search?q={}"}
 c.content.notifications.enabled = True
 c.content.autoplay = False
 
@@ -75,4 +73,4 @@ c.fileselect.single_file.command = ['kitty', '-e', 'ranger', '--choosefile={}']
 c.fileselect.multiple_files.command = ['kitty', '-e', 'ranger', '--choosefiles={}']
 
 ### FONTS
-c.fonts.hints = 'Iosevka SS14'
+c.fonts.hints = 'Iosevka'

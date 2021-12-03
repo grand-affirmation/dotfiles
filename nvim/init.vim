@@ -4,6 +4,7 @@ filetype plugin on
 syntax on
 set noswapfile
 let mapleader=" "
+set signcolumn=no
 
 " Automatically makes a folder when it's nonexistent on save
 function s:MkNonExDir(file, buf)
@@ -44,7 +45,12 @@ nnoremap <C-l> :w<CR> :term cargo run <cr> :startinsert<cr>
 nnoremap <C-A-l> :w<CR> :term cargo run --release <cr> :startinsert<cr>
 
 " colorscheme
-colorscheme onedark
+" colorscheme onedark
+let g:tokyodark_transparent_background = 0
+let g:tokyodark_enable_italic_comment = 1
+let g:tokyodark_enable_italic = 1
+let g:tokyodark_color_gamma = "1.0"
+colorscheme tokyodark
 
 " telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>

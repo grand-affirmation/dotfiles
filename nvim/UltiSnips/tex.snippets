@@ -1,5 +1,5 @@
 snippet latexnew "New Latex Paper" bA
-% !TeX program = lualatex
+% !TeX program = xetex
 \documentclass[12pt]{$1}
 \usepackage{microtype}
 \vfuzz3pt
@@ -8,7 +8,6 @@ snippet latexnew "New Latex Paper" bA
 \usepackage{fontspec}
 \defaultfontfeatures{Ligatures=TeX}
 \setmainfont{Bitter}
-\setsansfont{Helvetica}
 \AtBeginEnvironment{quote}{\singlespacing\small\sffamily}
 \usepackage[margin=2cm]{geometry}
 \usepackage{amsmath}
