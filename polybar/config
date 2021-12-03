@@ -1,12 +1,10 @@
 [colors]
-;background = ${xrdb:color0:#222}
-background = #222
-background-alt = #444
-;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
-foreground-alt = #555
-primary = #ffb52a
-secondary = #e60053
+background = #26233A
+background-alt = #bf1e1e1e
+foreground = #ffffff
+foreground-alt = #ffffff
+primary = #1b9fc6
+secondary = #ffffff
 alert = #bd2c40
 
 [bar/main]
@@ -21,8 +19,8 @@ fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
-line-color = #f00
+line-size = 2
+line-color = #00564d
 
 border-size = 0
 border-color = #00000000
@@ -60,20 +58,20 @@ cursor-scroll = ns-resize
 [module/bspwm]
 type = internal/bspwm
 
-label-focused = %index%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
+label-focused = ""
+label-focused-background = #6E6A86
+label-focused-foreground = #E0DEF4
+label-focused-underline= #E0DEF4
 label-focused-padding = 2
 
-label-occupied = %index%
+label-occupied = ""
 label-occupied-padding = 2
-
 label-urgent = %index%!
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
-label-empty = %index%
-label-empty-foreground = ${colors.foreground-alt}
+label-empty = ""
+label-empty-foreground = #E0DEF4
 label-empty-padding = 2
 
 ; Separator in between workspaces
