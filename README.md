@@ -16,7 +16,7 @@ These are my dotfiles. Currently using Void Linux.
 |image viewer|imv|
 |music player|cmus|
 |notification|dunst|
-|password manager|bitwarden|
+|password manager|keepassxc|
 |pdf viewer|zathura|
 |screenshots|scrot|
 |terminal emulator|alacritty|
