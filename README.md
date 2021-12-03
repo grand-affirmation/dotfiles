@@ -2,7 +2,7 @@
 
 ![](screenshot.jpg)
 
-These are my dotfiles. Currently using Artix Linux.
+These are my dotfiles. Currently using Void Linux.
 
 ---
 
