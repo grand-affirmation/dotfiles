@@ -10,6 +10,8 @@ config.set('content.javascript.enabled', True, 'https://*.rarbg.to/*')
 config.set('content.javascript.enabled', True, 'https://*.rarbgmirrored.org/*')
 config.set('content.javascript.enabled', True, 'https://*.rarbgaccess.org/*')
 config.set('content.javascript.enabled', True, 'https://*.torrentgalaxy.to/*')
+config.set('content.javascript.enabled', True, 'https://*.searx.tiekoetter.com/*')
+config.set('content.javascript.enabled', True, 'https://*.rust-lang.org/*')
 
 ### BINDS
 config.unbind('<Ctrl-Shift-n>', mode='normal') ## remove the default incognito mode
@@ -56,7 +58,7 @@ c.url.default_page = '~/dotfiles/qutebrowser/Homepage/homepage.html'
 ### Others
 c.content.prefers_reduced_motion = True
 c.input.insert_mode.leave_on_load = True
-c.url.searchengines = {"DEFAULT": "https://searx.bar/search?q={}"}
+c.url.searchengines = {"DEFAULT": "https://searx.tiekoetter.com/search?q={}"}
 c.content.notifications.enabled = True
 c.content.autoplay = False
 
