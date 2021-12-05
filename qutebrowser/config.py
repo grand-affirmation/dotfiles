@@ -12,6 +12,7 @@ config.set('content.javascript.enabled', True, 'https://*.rarbgaccess.org/*')
 config.set('content.javascript.enabled', True, 'https://*.torrentgalaxy.to/*')
 config.set('content.javascript.enabled', True, 'https://*.searx.tiekoetter.com/*')
 config.set('content.javascript.enabled', True, 'https://*.rust-lang.org/*')
+config.set('content.javascript.enabled', True, 'https://*.yandex.com/*')
 
 ### BINDS
 config.unbind('<Ctrl-Shift-n>', mode='normal') ## remove the default incognito mode
