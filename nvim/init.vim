@@ -48,8 +48,8 @@ nnoremap <C-A-t> :w<CR> :term cargo test -- --nocapture <cr> :startinsert<cr>
 " colorscheme
 " colorscheme onedark
 let g:tokyodark_transparent_background = 0
-let g:tokyodark_enable_italic_comment = 1
 let g:tokyodark_enable_italic = 1
+let g:tokyodark_enable_italic_comment = 1
 let g:tokyodark_color_gamma = "1.0"
 colorscheme tokyodark
 
@@ -60,12 +60,30 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>fr <cmd>Telescope oldfiles<cr>
 
+" ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+" vimtex
 let g:vimtex_compiler_engine='lualatex'
 let g:vimtex_view_general_viewer="zathura"
+
+" table mode
+function! s:isAtStartOfLine(mapping)
+  let text_before_cursor = getline('.')[0 : col('.')-1]
+  let mapping_pattern = '\V' . escape(a:mapping, '\')
+  let comment_pattern = '\V' . escape(substitute(&l:commentstring, '%s.*$', '', ''), '\')
+  return (text_before_cursor =~? '^' . ('\v(' . comment_pattern . '\v)?') . '\s*\v' . mapping_pattern . '\v$')
+endfunction
+let g:table_mode_corner='|'
+" table mode (cont.)
+inoreabbrev <expr> <bar><bar>
+          \ <SID>isAtStartOfLine('\|\|') ?
+          \ '<c-o>:TableModeEnable<cr><bar><space><bar><left><left>' : '<bar><bar>'
+inoreabbrev <expr> __
+          \ <SID>isAtStartOfLine('__') ?
+          \ '<c-o>:silent! TableModeDisable<cr>' : '__'
 
 set completeopt=menuone,noinsert,noselect
 set shortmess+=c

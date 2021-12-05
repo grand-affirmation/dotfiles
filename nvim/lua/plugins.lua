@@ -10,8 +10,10 @@ return require('packer').startup(function()
 	use 'nvim-telescope/telescope.nvim' -- searches, finds files very very fast
 	use 'norcalli/nvim-colorizer.lua' -- colorization of text and hex codes #FFFFFF
 	use 'ixru/nvim-markdown' -- markdown formats and quality of life improvements
-	--use 'navarasu/onedark.nvim' -- theme used
 	use 'tiagovla/tokyodark.nvim'
+	use 'LunarWatcher/auto-pairs'
+	use 'cespare/vim-toml'
+	use 'dhruvasagar/vim-table-mode'
 	use 'neovim/nvim-lspconfig' -- handles language servers
 	use 'hrsh7th/cmp-nvim-lsp' -- autocompletion
 	use 'hrsh7th/cmp-path' -- autocompletion
