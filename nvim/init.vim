@@ -43,6 +43,7 @@ nnoremap <C-h> :let @/ = ""<Cr>
 " compiles rust program and runs it
 nnoremap <C-l> :w<CR> :term cargo run <cr> :startinsert<cr>
 nnoremap <C-A-l> :w<CR> :term cargo run --release <cr> :startinsert<cr>
+nnoremap <C-A-t> :w<CR> :term cargo test -- --nocapture <cr> :startinsert<cr>
 
 " colorscheme
 " colorscheme onedark

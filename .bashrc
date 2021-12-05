@@ -1,7 +1,5 @@
 PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 
-exec fish
-
 alias exa="exa --icons --long --header --inode"
 alias rsync="rsync -av -P"
 alias mountfd="udisksctl mount -b /dev/sdb1"
@@ -21,3 +19,7 @@ export VISUAL=nvim
 export HISTCONTROL=ignoreboth:erasedups
 
 . "$HOME/.cargo/env"
+#. /usr/share/fzf/completion.bash
+#. /usr/share/fzf/key-bindings.bash
+
+exec fish
