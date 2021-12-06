@@ -11,7 +11,7 @@ return require('packer').startup(function()
 	use 'norcalli/nvim-colorizer.lua' -- colorization of text and hex codes #FFFFFF
 	use 'ixru/nvim-markdown' -- markdown formats and quality of life improvements
 	use 'tiagovla/tokyodark.nvim'
-	use 'LunarWatcher/auto-pairs'
+	use 'windwp/nvim-autopairs'
 	use 'cespare/vim-toml'
 	use 'dhruvasagar/vim-table-mode'
 	use 'neovim/nvim-lspconfig' -- handles language servers

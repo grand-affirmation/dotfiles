@@ -16,9 +16,9 @@ config.set('content.javascript.enabled', True, 'https://*.yandex.com/*')
 
 ### BINDS
 config.unbind('<Ctrl-Shift-n>', mode='normal') ## remove the default incognito mode
+config.bind('<Ctrl-Shift-p>', 'open -p') ## incognito
 config.unbind(';i', mode='normal') ## remove hint image
 config.bind(';i', 'hint images yank') ## get image link to clipboard
-config.bind('<Ctrl-Shift-p>', 'open -p') ## incognito
 config.bind('<Ctrl-[>', 'clear-keychain ;; search ;; fullscreen --leave ;; jseval -q document.activeElement.blur()') ## better Escape focus
 config.bind('X', 'hint links spawn --detach mpv --ytdl-format=bestvideo[height<=?480]+bestaudio {hint-url}') ## open a link in mpv
 config.bind('h', 'scroll-px -100 0')

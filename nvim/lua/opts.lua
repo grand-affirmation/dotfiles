@@ -74,3 +74,5 @@ cmp.setup({
     { name = 'buffer' },
   },
 })
+
+require('nvim-autopairs').setup{}
