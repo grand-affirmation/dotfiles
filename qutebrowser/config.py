@@ -10,7 +10,7 @@ config.set('content.javascript.enabled', True, 'https://*.rarbg.to/*')
 config.set('content.javascript.enabled', True, 'https://*.rarbgmirrored.org/*')
 config.set('content.javascript.enabled', True, 'https://*.rarbgaccess.org/*')
 config.set('content.javascript.enabled', True, 'https://*.torrentgalaxy.to/*')
-config.set('content.javascript.enabled', True, 'https://*.searx.tiekoetter.com/*')
+config.set('content.javascript.enabled', True, 'https://*.searx.bar/*')
 config.set('content.javascript.enabled', True, 'https://*.rust-lang.org/*')
 config.set('content.javascript.enabled', True, 'https://*.yandex.com/*')
 
@@ -27,6 +27,7 @@ config.bind('k', 'scroll-px 0 -100')
 config.bind('l', 'scroll-px 100 0')
 config.bind('tt', 'open ~/dotfiles/qutebrowser/Homepage/homepage.html')
 config.bind('tT', 'open -t ~/dotfiles/qutebrowser/Homepage/homepage.html')
+config.bind('gI', 'hint images download')
 
 ### ADBLOCKING
 config.source("adblock.py")
@@ -59,7 +60,7 @@ c.url.default_page = '~/dotfiles/qutebrowser/Homepage/homepage.html'
 ### Others
 c.content.prefers_reduced_motion = True
 c.input.insert_mode.leave_on_load = True
-c.url.searchengines = {"DEFAULT": "https://searx.tiekoetter.com/search?q={}"}
+c.url.searchengines = {"DEFAULT": "https://searx.bar/search?q={}"}
 c.content.notifications.enabled = True
 c.content.autoplay = False
 
