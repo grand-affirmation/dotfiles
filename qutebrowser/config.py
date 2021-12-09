@@ -10,7 +10,7 @@ config.set('content.javascript.enabled', True, 'https://*.rarbg.to/*')
 config.set('content.javascript.enabled', True, 'https://*.rarbgmirrored.org/*')
 config.set('content.javascript.enabled', True, 'https://*.rarbgaccess.org/*')
 config.set('content.javascript.enabled', True, 'https://*.torrentgalaxy.to/*')
-config.set('content.javascript.enabled', True, 'https://*.searx.bar/*')
+config.set('content.javascript.enabled', True, 'https://*.searx.be/*')
 config.set('content.javascript.enabled', True, 'https://*.rust-lang.org/*')
 config.set('content.javascript.enabled', True, 'https://*.yandex.com/*')
 
@@ -60,12 +60,12 @@ c.url.default_page = '~/dotfiles/qutebrowser/Homepage/homepage.html'
 ### Others
 c.content.prefers_reduced_motion = True
 c.input.insert_mode.leave_on_load = True
-c.url.searchengines = {"DEFAULT": "https://searx.bar/search?q={}"}
+c.url.searchengines = {"DEFAULT": "https://searx.be/search?q={}"}
 c.content.notifications.enabled = True
 c.content.autoplay = False
 
 ### For opening text ares in nvim
-c.editor.command=['kitty', 'nvim', '{file}']
+c.editor.command=['alacritty', '-e', 'nvim', '{file}']
 
 ### For the expando button in old.reddit
 config.set('hints.selectors', {'preview': ['.expando-button']},pattern='*://*.reddit.com/*')
@@ -73,8 +73,8 @@ config.bind(';p', 'hint preview')
 
 ### Ranger File Picker
 c.fileselect.handler = "external"
-c.fileselect.single_file.command = ['kitty', '-e', 'ranger', '--choosefile={}']
-c.fileselect.multiple_files.command = ['kitty', '-e', 'ranger', '--choosefiles={}']
+c.fileselect.single_file.command = ['alacritty', '-e', 'ranger', '--choosefile={}']
+c.fileselect.multiple_files.command = ['alacritty', '-e', 'ranger', '--choosefiles={}']
 
 ### FONTS
-c.fonts.hints = 'Iosevka'
+c.fonts.hints = 'Iosevka SS14'

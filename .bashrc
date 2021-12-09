@@ -4,7 +4,6 @@ alias exa="exa --icons --long --header --inode"
 alias rsync="rsync -av -P"
 alias mountfd="udisksctl mount -b /dev/sdb1"
 alias removefd="udisksctl unmount -b /dev/sdb1"
-alias clean-exif-data="exiftool -all= -overwrite_original"
 alias xclip="xclip -selection clip"
 alias yt-dlp="yt-dlp --external-downloader aria2c"
 
