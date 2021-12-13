@@ -22,7 +22,7 @@ xset -dpms s off
 
 # autostart
 #redshift &
-feh --no-fehbg --bg-tile $HOME/dotfiles/wallpaper.png
+feh --no-fehbg --bg-fill $HOME/dotfiles/wallpaper.jpg
 sxhkd &
 keepassxc &
 dunst &

@@ -31,7 +31,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "Iosevka SS14:pixelsize=11"
+font-0 = "JetBrains Mono:pixelsize=11"
 font-1 = "FontAwesome:style=Regular:pixelsize=10"
 
 modules-left = bspwm

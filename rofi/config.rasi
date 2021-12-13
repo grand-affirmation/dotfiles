@@ -1,9 +1,9 @@
 configuration{
     modi: "drun,run";
     lines: 5;
-    font: "Iosevka SS14 14";
+    font: "JetBrains Mono 14";
     show-icons: true;
-    terminal: "kitty";
+    terminal: "alacritty";
     drun-display-format: "{icon} {name}";
     display-drun: "  ";
     display-run: "  ";
