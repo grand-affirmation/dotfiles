@@ -17,8 +17,10 @@ export EDITOR=nvim
 export VISUAL=nvim
 export HISTCONTROL=ignoreboth:erasedups
 
-. "$HOME/.cargo/env"
+#. /usr/share/skim/completion.bash
+#. /usr/share/skim/key-bindings.bash
+. /usr/share/bash-completion/completions/skim-completion.bash
+. /usr/share/bash-completion/completions/skim-key-bindings.bash
 #. /usr/share/fzf/completion.bash
 #. /usr/share/fzf/key-bindings.bash
-
-exec fish
+. "$HOME/.cargo/env"
