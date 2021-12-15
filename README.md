@@ -2,7 +2,7 @@
 
 ![](screenshot.jpg)
 
-These are my dotfiles. Currently using Void Linux.
+These are my dotfiles. Currently using Gentoo.
 
 ---
 
@@ -11,7 +11,7 @@ These are my dotfiles. Currently using Void Linux.
 |-------|--------------|
 |application launcher|rofi|
 |bittorrent client|qbittorrent|
-|browser|qutebrowser|
+|browser|firefox|
 |file manager|ranger|
 |image viewer|imv|
 |music player|cmus|
@@ -24,5 +24,5 @@ These are my dotfiles. Currently using Void Linux.
 |window manager|bspwm|
 
 ## Fonts Needed
-- Iosevka
+- JetBrains Mono
 - Font Awesome

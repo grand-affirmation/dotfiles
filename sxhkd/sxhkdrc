@@ -8,9 +8,9 @@ super + Return
 
 # scrot
 super + shift + P
-	scrot 'screenshot %M:%S.png' -e 'mat2 $f'
+	scrot 'screenshot %M:%S.png' -e 'exiftool -all= -overwrite_original $f'
 super + alt + @p
-	scrot -s 'screenshot %M:%S.png' -e 'mat2 $f'
+	scrot -s 'screenshot %M:%S.png' -e 'exiftool -all= -overwrite_original $f'
 
 # xkill
 super + x
